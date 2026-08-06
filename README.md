@@ -48,7 +48,7 @@ Administrar un hato no debería depender de hojas de cálculo dispersas. Sistema
 ## Stack tecnológico
 
 - **Backend:** PHP 8.3 y Laravel 13.
-- **Base de datos:** SQLite por defecto; compatible con MySQL mediante variables de entorno.
+- **Base de datos:** mariaDB
 - **Frontend:** Blade, Tailwind CSS 4 y Vite.
 - **Pruebas:** PHPUnit.
 
