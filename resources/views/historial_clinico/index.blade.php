@@ -7,6 +7,9 @@
     <!-- Top Navigation Bar Shell -->
     <nav class="fixed top-0 left-0 w-full flex justify-between items-center px-6 h-16 bg-surface border-b border-outline-variant shadow-sm z-30">
         <div class="flex items-center gap-4">
+            <button class="md:hidden p-2 rounded hover:bg-surface-container-highest transition-colors" onclick="toggleSidebar()" aria-label="Abrir menú">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
             <span class="font-bold text-xl text-primary flex items-center gap-2">
                 <span class="material-symbols-outlined fill text-primary">pets</span>
                 Sistema Ganadero
@@ -22,7 +25,7 @@
     </nav>
 
     <!-- Side Navigation Shell -->
-    <aside class="fixed left-0 top-0 h-full flex flex-col py-6 border-r border-outline-variant bg-surface-container w-64 pt-20 z-20">
+    <aside id="sidebar" class="fixed left-0 top-0 h-full flex flex-col py-6 border-r border-outline-variant bg-surface-container w-64 pt-20 z-20">
         <nav class="flex-1 px-4 space-y-1">
             <a href="{{ route('ganado.index') }}" class="flex items-center gap-3 px-4 py-3 rounded-system text-on-surface-variant hover:bg-surface-container-highest transition-all text-xs">
                 <span class="material-symbols-outlined">pets</span> Ganado

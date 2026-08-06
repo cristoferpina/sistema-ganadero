@@ -25,7 +25,7 @@
     </nav>
 
     <!-- Side Navigation Shell -->
-    <aside id="sidebar" class="fixed left-0 top-0 h-full flex flex-col py-6 border-r border-outline-variant bg-surface-container w-64 pt-20 z-20 transform -translate-x-full md:translate-x-0 md:static md:translate-x-0 transition-transform">
+    <aside id="sidebar" class="fixed left-0 top-0 h-full flex flex-col py-6 border-r border-outline-variant bg-surface-container w-64 pt-20 z-20 transform -translate-x-full md:translate-x-0 transition-transform">
         <nav class="flex-1 px-4 space-y-1">
             <a href="{{ route('ganado.index') }}" class="flex items-center gap-3 px-4 py-3 rounded-system {{ request()->routeIs('ganado.*') ? 'text-primary font-semibold border-r-4 border-primary bg-surface-container-high' : 'text-on-surface-variant hover:bg-surface-container-highest' }} text-xs transition-all">
                 <span class="material-symbols-outlined fill">pets</span> Ganado
@@ -576,12 +576,21 @@
     // Sidebar toggle for small screens
     function toggleSidebar() {
         const sb = document.getElementById('sidebar');
-        if (!sb) return;
-        if (sb.classList.contains('-translate-x-full')) {
-            sb.classList.remove('-translate-x-full');
-        } else {
-            sb.classList.add('-translate-x-full');
-        }
+        if (!sb || window.innerWidth >= 768) return;
+
+        const isOpen = sb.classList.toggle('sidebar-open');
+        document.querySelector('.sidebar-scrim')?.remove();
+        if (!isOpen) return;
+
+        const scrim = document.createElement('button');
+        scrim.type = 'button';
+        scrim.className = 'sidebar-scrim';
+        scrim.setAttribute('aria-label', 'Cerrar menú');
+        scrim.addEventListener('click', () => {
+            sb.classList.remove('sidebar-open');
+            scrim.remove();
+        });
+        document.body.appendChild(scrim);
     }
 </script>
 @endsection

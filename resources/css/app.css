@@ -136,3 +136,52 @@ select option {
 ::-webkit-scrollbar-thumb:hover {
   background: #10b981;
 }
+
+/* Dashboard layout: the sidebar becomes a slide-out menu on phones. */
+@media (max-width: 767px) {
+  #sidebar {
+    z-index: 45;
+    translate: -100% 0;
+    transition: translate 200ms ease;
+  }
+
+  #sidebar.sidebar-open {
+    translate: 0 0 !important;
+  }
+
+  .sidebar-scrim {
+    position: fixed;
+    inset: 0;
+    z-index: 40;
+    background: rgba(5, 10, 20, .62);
+    backdrop-filter: blur(2px);
+  }
+
+  main.ml-64 {
+    margin-left: 0;
+    padding: 5rem 1rem 1.5rem;
+  }
+
+  nav.fixed {
+    padding-inline: 1rem;
+  }
+
+  nav.fixed > .flex-1 {
+    display: none;
+  }
+
+  header > button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .modal-content {
+    max-height: calc(100dvh - 2rem);
+  }
+}
+
+@media (min-width: 768px) {
+  #sidebar {
+    translate: 0 0 !important;
+  }
+}
