@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+@theme {
+  /* 🌙 Paleta Premium Emerald Dark Theme (Modo Oscuro Elegante) */
+  --color-primary: #10b981;
+  --color-primary-container: #065f46;
+  --color-primary-fixed-dim: #34d399;
+  --color-on-primary: #022c22;
+  --color-on-primary-container: #a7f3d0;
+  
+  --color-secondary: #38bdf8;
+  --color-secondary-container: #075985;
+  --color-on-secondary-container: #bae6fd;
+  
+  --color-tertiary: #f59e0b;
+  --color-tertiary-container: #78350f;
+  
+  --color-background: #0b1320;
+  --color-on-background: #f8fafc;
+  
+  --color-surface: #111c2e;
+  --color-surface-dim: #0d1625;
+  --color-surface-bright: #18263e;
+  --color-surface-container-lowest: #152238;
+  --color-surface-container-low: #1a2942;
+  --color-surface-container: #1e304d;
+  --color-surface-container-high: #243859;
+  --color-surface-container-highest: #2d446b;
+  --color-surface-variant: #263857;
+  
+  --color-on-surface: #f8fafc;
+  --color-on-surface-variant: #94a3b8;
+  --color-inverse-surface: #f1f5f9;
+  --color-inverse-on-surface: #0f172a;
+  
+  --color-outline: #334155;
+  --color-outline-variant: #1e293b;
+  
+  --color-error: #f43f5e;
+  --color-error-container: #881337;
+  --color-on-error: #ffffff;
+  --color-on-error-container: #fecdd3;
+  
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-mono-data: 'JetBrains Mono', monospace;
+
+  --radius-system: 12px;
+  --radius-modal: 16px;
+}
+
+/* Base resets & dark inputs */
+html, body {
+  color-scheme: dark;
+  background-color: var(--color-background);
+  color: var(--color-on-background);
+}
+
+/* Material Symbols Outlined Custom Styles */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+.material-symbols-outlined.fill {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Custom Utility Classes */
+.shadow-ambient-lvl1 {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.40);
+}
+.shadow-ambient-lvl2 {
+  box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.70);
+}
+
+.modal-backdrop {
+  background-color: rgba(5, 10, 20, 0.80);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.modal-content {
+  animation: modalScaleIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Modal Size Standards */
+.modal-dialog-confirm {
+  width: 100%;
+  max-width: 440px !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-dialog-form {
+  width: 100%;
+  max-width: 660px !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-dialog-sm {
+  width: 100%;
+  max-width: 380px !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes modalScaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.94) translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Dark mode styling for selects & inputs */
+select option {
+  background-color: #152238;
+  color: #f8fafc;
+  padding: 8px;
+}
+
+/* Custom scrollbars for modal forms */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(15, 25, 40, 0.5);
+}
+::-webkit-scrollbar-thumb {
+  background: #2d446b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #10b981;
+}
