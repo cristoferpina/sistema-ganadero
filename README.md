@@ -4,7 +4,9 @@
 
 # Sistema ganadero
 
-Control de animales, salud, reproducción y movimientos del hato.
+**La historia de cada animal, en una sola aplicación.**
+
+Gestión de ganado que conecta identificación, salud, reproducción y movimientos para facilitar la consulta de la operación del hato.
 
 <img alt="Laravel" src="https://img.shields.io/badge/Laravel-0F172A?style=for-the-badge" />
 <img alt="Blade" src="https://img.shields.io/badge/Blade-1D4ED8?style=for-the-badge" />
@@ -13,6 +15,17 @@ Control de animales, salud, reproducción y movimientos del hato.
 [Código fuente](https://github.com/cristoferpina/sistema-ganadero) &nbsp; / &nbsp; [Incidencias](https://github.com/cristoferpina/sistema-ganadero/issues) &nbsp; / &nbsp; [Perfil](https://github.com/cristoferpina)
 
 </div>
+
+## Una mirada al proyecto
+
+| Qué encontrarás | Por qué explorarlo |
+| --- | --- |
+| La historia de cada animal, en una sola aplicación. | Gestión de ganado que conecta identificación, salud, reproducción y movimientos para facilitar la consulta de la operación del hato. |
+| Trabajo de desarrollo | Modelado de datos, módulos de gestión con Laravel e interfaces Blade para tareas operativas. |
+
+**[Explora los módulos del sistema →](app/)**
+
+
 
 ---
 
