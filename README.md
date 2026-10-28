@@ -1,42 +1,42 @@
 <div align="center">
 
-# 🐄 Sistema ganadero
+<sub>CRISTOFER PIÑA · DESARROLLO DE SOFTWARE</sub>
+
+# Sistema ganadero
 
 Control de animales, salud, reproducción y movimientos del hato.
 
-**Laravel · Blade · Tailwind CSS**
+<img alt="Laravel" src="https://img.shields.io/badge/Laravel-0F172A?style=for-the-badge" />
+<img alt="Blade" src="https://img.shields.io/badge/Blade-1D4ED8?style=for-the-badge" />
+<img alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind%20CSS-0F766E?style=for-the-badge" />
 
-[Explorar código](https://github.com/cristoferpina/sistema-ganadero) · [Reportar un problema](https://github.com/cristoferpina/sistema-ganadero/issues)
+[Código fuente](https://github.com/cristoferpina/sistema-ganadero) &nbsp; / &nbsp; [Incidencias](https://github.com/cristoferpina/sistema-ganadero/issues) &nbsp; / &nbsp; [Perfil](https://github.com/cristoferpina)
 
 </div>
 
 ---
 
-<p align="center">
-  Plataforma web para llevar el control operativo de un hato: animales, salud, reproducción, movimientos y usuarios desde una sola interfaz.
-</p>
-
-<p align="center">
-  <a href="http://34.73.62.113"><strong>🚀 Abrir sistema en producción</strong></a>
-  &nbsp;·&nbsp;
-  <a href="#instalación-local">Instalación local</a>
-  &nbsp;·&nbsp;
-  <a href="#módulos">Módulos</a>
-</p>
+[Acceso a producción](#seccion-1) · [Qué resuelve](#seccion-2) · [Módulos](#seccion-3) · [Experiencia de uso](#seccion-4) · [Stack tecnológico](#seccion-5)
 
 ---
+
+<a id="seccion-1"></a>
 
 ## Acceso a producción
 
 El sistema está disponible en:
 
-### [http://34.73.62.113](http://34.73.62.113)
+### http://34.73.62.113](http://34.73.62.113)
 
 > La URL utiliza HTTP. Para información sensible o acceso público permanente, se recomienda habilitar HTTPS con un certificado TLS antes de operar en un entorno real.
+
+<a id="seccion-2"></a>
 
 ## Qué resuelve
 
 Administrar un hato no debería depender de hojas de cálculo dispersas. Sistema Ganadero centraliza la información clave del rancho, facilita la consulta por arete y conserva el historial de cada animal para apoyar decisiones oportunas.
+
+<a id="seccion-3"></a>
 
 ## Módulos
 
@@ -48,6 +48,8 @@ Administrar un hato no debería depender de hojas de cálculo dispersas. Sistema
 | 💰 **Ventas y bajas** | Registro de ventas, compras, muertes, bajas y sus datos de movimiento. |
 | 👥 **Usuarios** | Administración de usuarios, roles y estado de las cuentas. |
 
+<a id="seccion-4"></a>
+
 ## Experiencia de uso
 
 - Diseño oscuro, claro y enfocado en información operativa.
@@ -57,12 +59,16 @@ Administrar un hato no debería depender de hojas de cálculo dispersas. Sistema
 - Tablas con desplazamiento horizontal en móvil para conservar todos los datos sin perder columnas.
 - Formularios y paneles de detalle para trabajar sin salir de la pantalla actual.
 
+<a id="seccion-5"></a>
+
 ## Stack tecnológico
 
 - **Backend:** PHP 8.3 y Laravel 13.
 - **Base de datos:** mariaDB
 - **Frontend:** Blade, Tailwind CSS 4 y Vite.
 - **Pruebas:** PHPUnit.
+
+<a id="seccion-6"></a>
 
 ## Instalación local
 
@@ -98,6 +104,8 @@ composer run dev
 
 La aplicación quedará disponible en la dirección indicada por Laravel, normalmente `http://127.0.0.1:8000`.
 
+<a id="seccion-7"></a>
+
 ## Configuración de base de datos
 
 El proyecto viene preparado para SQLite. Para usar MySQL, actualiza estas variables en `.env`:
@@ -119,6 +127,8 @@ php artisan migrate --seed
 
 El seeder incluye animales de ejemplo para iniciar una demostración del módulo de ganado.
 
+<a id="seccion-8"></a>
+
 ## Comandos útiles
 
 | Acción | Comando |
@@ -128,6 +138,8 @@ El seeder incluye animales de ejemplo para iniciar una demostración del módulo
 | Limpiar configuración en caché | `php artisan config:clear` |
 | Aplicar migraciones | `php artisan migrate` |
 | Cargar datos de demostración | `php artisan db:seed` |
+
+<a id="seccion-9"></a>
 
 ## Despliegue
 
@@ -143,6 +155,8 @@ php artisan optimize
 ```
 
 El servidor web debe apuntar al directorio `public/` de Laravel y tener permisos de escritura sobre `storage/` y `bootstrap/cache/`.
+
+<a id="seccion-10"></a>
 
 ## Estructura del proyecto
 
@@ -160,6 +174,14 @@ resources/
 routes/web.php             # Rutas de la aplicación
 ```
 
+<a id="seccion-11"></a>
+
 ## Licencia
 
 Proyecto desarrollado para la gestión interna de una operación ganadera. Define la licencia de distribución que corresponda antes de reutilizarlo o publicarlo.
+
+---
+
+<div align="center">
+<sub>Desarrollado por <a href="https://github.com/cristoferpina">Cristofer Piña</a></sub>
+</div>
