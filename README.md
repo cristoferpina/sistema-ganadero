@@ -1,4 +1,16 @@
-# Sistema Ganadero
+<div align="center">
+
+# 🐄 Sistema ganadero
+
+Control de animales, salud, reproducción y movimientos del hato.
+
+**Laravel · Blade · Tailwind CSS**
+
+[Explorar código](https://github.com/cristoferpina/sistema-ganadero) · [Reportar un problema](https://github.com/cristoferpina/sistema-ganadero/issues)
+
+</div>
+
+---
 
 <p align="center">
   Plataforma web para llevar el control operativo de un hato: animales, salud, reproducción, movimientos y usuarios desde una sola interfaz.
@@ -63,7 +75,7 @@ Administrar un hato no debería depender de hojas de cálculo dispersas. Sistema
 ### Puesta en marcha
 
 ```bash
-git clone <URL_DEL_REPOSITORIO>
+git clone https://github.com/cristoferpina/sistema-ganadero.git
 cd sistema-ganadero
 
 composer install
